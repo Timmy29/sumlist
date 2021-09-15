@@ -1,0 +1,16 @@
+import random
+okay=True
+
+while okay: 
+       sumlist=int(input("Enter amount of numbers here:"))
+       num=random.sample(range(0, 100), sumlist)
+       if sumlist <=1:
+           print("Use more numbers to calculate!!")
+           okay
+       elif sumlist >=2:
+           print(num)
+           sum1=sum(num)
+           print("The total sum is:", sum1)
+           okay
+
+
